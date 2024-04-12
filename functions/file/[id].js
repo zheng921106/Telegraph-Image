@@ -9,7 +9,7 @@ export async function onRequest(context) {  // Contents of context object
      } = context;
      context.request
     
-    const allowedDomains = ["96660.cn", "blog.96660.cn", "www.chengyu.eu", "chengyu.eu"];
+    const allowedDomains = ["96660.cn", "blog.96660.cn", "www.96660.cn", "www.chengyu.eu", "chengyu.eu"];
 
     // Extract the Referer header or use a placeholder if not present
     const Referer = request.headers.get('Referer') || "Referer";
