@@ -10,6 +10,27 @@ export async function onRequest(context) {  // Contents of context object
      context.request
      const url = new URL(request.url);
     
+    const allowedDomains = ["96660.cn", "blog.96660.cn", "chengyu.eu", "www.chengyu.eu"];
+
+    // Extract the Referer header or use a placeholder if not present
+    const Referer = request.headers.get('Referer') || "Referer";
+    
+    // Create a URL object from the Referer to extract the hostname
+    let refererUrl;
+    try {
+        refererUrl = new URL(Referer);
+    } catch (error) {
+        return Response.redirect("https://www.chengyu.eu", 302);
+    }
+    
+    // Check if the hostname of the Referer is in the list of allowed domains
+    if (!allowedDomains.includes(refererUrl.hostname)) {
+        return Response.redirect("https://www.chengyu.eu", 302);
+    }
+    
+    // Existing code for handling requests continues here...
+    const url = new URL(request.url);
+    
     const response = fetch('https://telegra.ph/' + url.pathname + url.search, {
          method: request.method,
          headers: request.headers,
