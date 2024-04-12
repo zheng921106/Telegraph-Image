@@ -9,7 +9,8 @@ export async function onRequest(context) {  // Contents of context object
      } = context;
      context.request
     
-    const allowedDomains = ["96660.cn", "blog.96660.cn", "www.96660.cn", "www.chengyu.eu", "chengyu.eu"];
+    //const allowedDomains = ["96660.cn", "blog.96660.cn", "www.96660.cn", "www.chengyu.eu", "chengyu.eu"];
+    const allowedDomains = DOMAIN_LIST.split(",");  //域名从cloudflare的环境变量中获取
 
     // Extract the Referer header or use a placeholder if not present
     const Referer = request.headers.get('Referer') || "Referer";
