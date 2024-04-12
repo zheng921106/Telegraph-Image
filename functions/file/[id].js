@@ -8,7 +8,6 @@ export async function onRequest(context) {  // Contents of context object
      data, // arbitrary space for passing data between middlewares 
      } = context;
      context.request
-     const url = new URL(request.url);
     
     const allowedDomains = ["96660.cn", "blog.96660.cn", "chengyu.eu", "www.chengyu.eu"];
 
