@@ -6,7 +6,7 @@ This branch adds restrictions on image references on the basis of the original v
 
 Deployment in cloudflare is very simple, after deployment you just need to add a variable to write the domains that are allowed to be accessed in a comma spaced manner. (There are specific steps in the back, deleting the content of the image sensitivity checking service and adding part of the graphical explanation)
 
-  English|Chinese
+  English|[中文](README.md)
 
 # Telegraph-Image
 
