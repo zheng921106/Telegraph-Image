@@ -81,7 +81,7 @@
 域名需要完整登录，如果你的网站xxx.com和sub.xxx.com都可以访问，则需要xxx.com和sub.xxx.com都以逗号分隔的方式维护到域名清单中。
 
 4） 参数维护后重新发布项目
-
+![](https://im.gurl.eu.org/file/b514467a4b3be0567a76f.png)
 
 ## 一些限制：
 
@@ -98,7 +98,7 @@ Cloudflare KV 每天只有 1000 次的免费写入额度，每有一张新的图
 如果你的免费额度不够用，可以自行向 Cloudflare 购买 Cloudflare Workers 的付费版本，每月$5 起步，按量收费，没有上述额度限制
 
 另外针对环境变量所做的更改将在下次部署时生效，如更改了`环境变量`，针对某项功能进行了开启或关闭，请记得重新部署。
-![](https://im.gurl.eu.org/file/b514467a4b3be0567a76f.png)
+
 
 ### 感谢
 
