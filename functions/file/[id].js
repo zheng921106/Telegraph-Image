@@ -20,12 +20,12 @@ export async function onRequest(context) {  // Contents of context object
     try {
         refererUrl = new URL(Referer);
     } catch (error) {
-        return Response.redirect('https://${firstDomain}', 302);
+        return Response.redirect(`https://${firstDomain}`, 302);
     }
     
     // Check if the hostname of the Referer is in the list of allowed domains
     if (!allowedDomains.includes(refererUrl.hostname)) {
-        return Response.redirect('https://${firstDomain}', 302);
+        return Response.redirect(`https://${firstDomain}`, 302);
     }
     
     // Existing code for handling requests continues here...
