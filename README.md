@@ -24,8 +24,9 @@
 
 --------------------------------------
 # 如何部署 
-操作视频链接：
-<a href="https://www.youtube.com/watch?v=vDQvdcmxkcw" title="部署视频介绍"><img src="https://i9.ytimg.com/vi_webp/vDQvdcmxkcw/mqdefault.webp?v=661a0d8d&sqp=CLSH6bAG&rs=AOn4CLCFfNTGbcfsLiGQI5CjpY8kWP06Zg" alt="Alternate Text" /></a>
+
+<a href="https://www.youtube.com/watch?v=vDQvdcmxkcw" title="部署视频介绍">部署视频介绍</a>
+
 
 ## 提前准备
 
